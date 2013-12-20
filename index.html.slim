@@ -1,0 +1,7 @@
+.page
+  h1 一日行程列表
+  .spot-item-group
+    .spot-item ng-repeat="trip_spot in trip_spots"
+      .spot-title= '{{$index+1}} {{trip_spot.name}}'
+      .spot-addr= '{{trip_spot.addr}}'
+      .spot-link= 'Form: {{trip_spot.name}}, To: {{trip_spots[$index + 1].name}}'
